@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cogtoolplus_visual>   
+	<bar_chart property='level'>
+		<operation>Right Hand</operation>
+		<title>Bar chart</title>
+		<x_title>Pass Picture</x_title>
+		<y_title>Time (ms)</y_title>		
+		<dataset name='level'>
+			<data>0</data>
+			<data>1</data>
+			<data>2</data>
+			<data>3</data>
+			<data>4</data>
+			<data>5</data>
+			<data>6</data>
+		</dataset>
+	</bar_chart>
+	<histogram property='model'>
+	    <operation>Overall</operation>
+		<title>Histogram</title>
+		<x_title>Press Number 1</x_title>
+		<y_title></y_title>	 
+		<dataset target = "Overall" name='Test'>
+			<data>1</data>
+		</dataset>
+	</histogram>
+		<histogram property='model'>
+	    <operation>Overall</operation>
+		<title>Histogram</title>
+		<x_title>Press Number 2</x_title>
+		<y_title></y_title>	 
+		<dataset target = "Overall" name='Test'>
+			<data>2</data>
+		</dataset>
+	</histogram>
+		<histogram property='model'>
+	    <operation>Overall</operation>
+		<title>Histogram</title>
+		<x_title>Press Number 3</x_title>
+		<y_title></y_title>	 
+		<dataset target = "Overall" name='Test'>
+			<data>3</data>
+		</dataset>
+	</histogram>
+	
+	
+		<!--<bar_chart property='model'>
+		<title>Bar chart</title>
+		<x_title>Hidden Challenge</x_title>
+		<y_title>Time (ms)</y_title>		
+		<dataset name='widget group'>
+			<data>hidden up</data>
+			<data>hidden down</data>
+			<data>hidden left</data>
+			<data>hidden right</data>
+			<data>hidden centre</data>
+		</dataset>
+	</bar_chart>
+		<bar_chart property='model'>
+		<title>Bar chart</title>
+		<x_title>Hidden Challenge</x_title>
+		<y_title>Time (ms)</y_title>		
+		<dataset name='Pass photo'>
+			<data>wg_photo1</data>
+			<data>wg_photo2</data>
+			<data>wg_photo3</data>
+			<data>wg_photo4</data>
+			<data>wg_photo5</data>
+		</dataset>
+	</bar_chart>-->
+	<!--<histogram property='model'>
+		<title>Histogram</title>
+		<x_title>Picture 3</x_title>
+		<y_title></y_title>	 
+		<dataset name='Pass Picture'>
+			<data>wg_photo3</data>
+		</dataset>
+	</histogram>
+	<histogram property='model'>
+		<title>Histogram</title>
+		<x_title>Picture 4</x_title>
+		<y_title></y_title>	 
+		<dataset name='Pass Picture'>
+			<data>wg_photo4</data>
+		</dataset>
+	</histogram>
+		<histogram property='model'>
+		<title>Histogram</title>
+		<x_title>Picture 5</x_title>
+		<y_title></y_title>	 
+		<dataset name='Pass Picture'>
+			<data>wg_photo5</data>
+		</dataset>
+	</histogram>-->
+	
+	<!--
+	<bar_chart separate='true'>
+		<title>Mean Time</title>
+		<x_title>Hidden Challenge</x_title>
+		<y_title>Time (ms)</y_title>	 
+		<dataset name = 'Hidden Up'>
+			<data>wg_buttonU1</data>
+			<data>wg_buttonU2</data>
+			<data>wg_buttonU3</data>
+			<data>wg_buttonU4</data>
+			<data>wg_buttonU5</data>
+		</dataset>
+		<dataset name = 'Hidden Down'>
+			<data>wg_buttonD1</data>
+			<data>wg_buttonD2</data>
+			<data>wg_buttonD3</data>
+			<data>wg_buttonD4</data>
+			<data>wg_buttonD5</data>
+		</dataset>
+		<dataset name = 'Hidden Left'>
+			<data>wg_buttonL1</data>
+			<data>wg_buttonL2</data>
+			<data>wg_buttonL3</data>
+			<data>wg_buttonL4</data>
+			<data>wg_buttonL5</data>
+		</dataset>
+		<dataset name = 'Hidden Right'>
+			<data>wg_buttonR1</data>
+			<data>wg_buttonR2</data>
+			<data>wg_buttonR3</data>
+			<data>wg_buttonR4</data>
+			<data>wg_buttonR5</data>
+		</dataset>
+		<dataset name = 'Hidden Centre'>
+			<data>wg_buttonC1</data>
+			<data>wg_buttonC2</data>
+			<data>wg_buttonC3</data>
+			<data>wg_buttonC4</data>
+			<data>wg_buttonC5</data>
+		</dataset>
+	</bar_chart>
+	<histogram separate='true'>
+		<title>Histogram</title>
+		<x_title>Bins</x_title>
+		<y_title>Performance</y_title>	 
+		<dataset name='Hidden Challenge'>
+			<data>hidden up</data>
+			<data>hidden down</data>
+			<data>hidden left</data>
+			<data>hidden right</data>
+			<data>hidden centre</data>
+		</dataset>
+	</histogram>
+	<histogram separate='true'>
+		<title>Histogram</title>
+		<x_title>Bins</x_title>
+		<y_title>Performance</y_title>	 
+		<dataset name='Pass photo'>
+			<data>wg_photo1</data>
+			<data>wg_photo2</data>
+			<data>wg_photo3</data>
+			<data>wg_photo4</data>
+			<data>wg_photo5</data>
+		</dataset>
+	</histogram>
+	-->	
+</cogtoolplus_visual>

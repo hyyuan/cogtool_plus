@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cogtoolplus_visual>
+	<bar_chart property='level'>
+		<operation>Overall</operation>
+		<title>Bar chart</title>
+		<x_title>Pass Picture</x_title>
+		<y_title>Time (ms)</y_title>		
+		<dataset name='Pass photo'>
+			<data>wg_photo1</data>
+			<data>wg_photo2</data>
+			<data>wg_photo3</data>
+			<data>wg_photo4</data>
+			<data>wg_photo5</data>
+		</dataset>
+	</bar_chart>
+	<bar_chart property='level'>
+		<operation>Overall</operation>
+		<title>Bar chart</title>
+		<x_title>Hidden Challenge</x_title>
+		<y_title>Time (ms)</y_title>		
+		<dataset name='widget group'>
+			<data>hidden up</data>
+			<data>hidden down</data>
+			<data>hidden left</data>
+			<data>hidden right</data>
+			<data>hidden centre</data>
+		</dataset>
+	</bar_chart>
+	<histogram property='model'>
+		<operation>Overall</operation>
+		<title>Histogram</title>
+		<x_title>Pass picture 3</x_title>
+		<y_title></y_title>	 
+		<dataset name='Pass Picture'>
+			<data>wg_photo3</data>
+		</dataset>
+	</histogram>
+	<histogram property='model'>
+		<operation>Overall</operation>
+		<title>Histogram</title>
+		<x_title>Pass picture 5</x_title>
+		<y_title></y_title>	 
+		<dataset name='Pass Picture'>
+			<data>wg_photo5</data>
+		</dataset>
+	</histogram>
+</cogtoolplus_visual>

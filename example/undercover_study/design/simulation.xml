@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cogtoolplus_simulation>
+	<trial>10</trial>
+	<pref-setting type="dynamic">
+		<imply_think>true</imply_think>
+		<fitts_cof>
+			<distribution name="gaussian">
+				<mean>50</mean>
+				<std>1.5</std>
+			</distribution>		
+		</fitts_cof>
+		<fitts_min>
+		    <distribution name="gaussian">
+				<mean>75</mean>
+				<std>1.75</std>
+			</distribution>	
+		</fitts_min>
+	</pref-setting>	
+</cogtoolplus_simulation>
+

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cogtoolplus_simulation>
+	<trial>50</trial>
+	<variable>
+		<id>externalPin</id>	
+		<type>ArrayList</type>		
+		<value>
+			<callback type="csv">
+				<file>pinSMU.csv</file>
+				<row>0</row>
+				<data_structure>String</data_structure>
+			</callback>	
+		</value>		
+	</variable>
+	<pref-setting type="static">
+	    <imply_think>false</imply_think>
+		<fitts_cof>48</fitts_cof>
+		<fitts_min>136</fitts_min>
+	</pref-setting>
+	<!--
+	<variable>
+		<id>test</id>	
+		<type>ArrayList</type>		
+		<value>
+			<callback type="csv">
+				<file>pin2.csv</file>
+				<row>0</row>
+				<data_structure>Integer</data_structure>
+			</callback>	
+		</value>		
+	</variable>-->
+
+	<!--<pref-setting type="dynamic">
+		<fitts_cof>
+			<callback type="csv">
+				<file>input.csv</file>
+                <row>0</row>		
+				<data_structure>Double</data_structure>				
+			</callback>	
+		</fitts_cof>
+		<fitts_min>
+			<callback type="csv">
+				<file>input.csv</file>
+                <row>1</row>		
+				<data_structure>Double</data_structure>				
+			</callback>
+		</fitts_min>
+	</pref-setting>-->	
+	<!--<pref-setting type="dynamic">
+	<fitts_cof>
+		<callback type="xml">
+			<file>preference.js</file>
+			<function>getFittsA</function>
+			<data_structure>ArrayList</data_structure>				
+		</callback>
+	</fitts_cof>
+	<fitts_min>
+		<callback type="xml">
+			<file>preference.js</file>
+			<function>getFittsB</function>
+			<data_structure>ArrayList</data_structure>				
+		</callback>
+	</fitts_min>
+</pref-setting>-->
+</cogtoolplus_simulation>
+
+<!--<pref-setting type="dynamic">
+			<research>true</research>
+			<fitts_cof>
+				<callback>
+					<file>preference.js</file>
+					<function>getFittsA</function>
+					<data_structure>ArrayList-Integer</data_structure>				
+				</callback>
+			</fitts_cof>
+			<fitts_min>
+				<callback>
+					<file>preference.js</file>
+					<function>getFittsB</function>
+					<data_structure>ArrayList-Integer</data_structure>				
+				</callback>
+			</fitts_min>
+		</pref-setting>
+		-->
+<!--<pref-setting type="static">
+		<fitts_cof>50</fitts_cof>
+		<fitts_min>75</fitts_min>
+	</pref-setting>-->
+<!--
+			<distribution name="exponential">
+				<size>10</size>
+				<mean>75</mean>
+				<lamda>0.5</lamda>
+			</distribution>	
+			-->

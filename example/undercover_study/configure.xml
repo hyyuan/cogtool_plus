@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cogtoolplus_configure>
+	<io>
+		<dir>C:/Users/hy0006/Documents/CogTool+/undercover_study_tochi/design</dir>		
+		<dir_js>C:/Users/hy0006/Documents/CogTool+/undercover_study_tochi/js</dir_js>
+		<dir_output>C:/Users/hy0006/Documents/CogTool+/undercover_study_tochi/output</dir_output>
+	</io>
+</cogtoolplus_configure>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cogtoolplus_mixed>
+   <name>inter-stroke-pin-demo</name>
+   <level>
+      <property>1</property>
+      <id>pin</id>
+      <model_list>
+         <model>
+            <id>model</id>
+            <model_name>model_pin</model_name>
+            <simulation_name>simulation</simulation_name>
+            <weight>1</weight>
+         </model>
+      </model_list>
+   </level>
+</cogtoolplus_mixed>

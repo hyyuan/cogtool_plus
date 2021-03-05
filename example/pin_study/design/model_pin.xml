@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cogtoolplus_metamodel>
+	<system>
+		<global_variable>
+			<variable>
+				<id>numberFrame</id>
+				<type>Integer</type>
+				<value ref="false">7</value>
+			</variable>				
+		    <variable>
+			    <id>password</id>
+				<type>ArrayList</type>
+				<value ref="true" type="dynamic">
+				    <id>externalPin</id>   
+					<type>String</type>
+				</value>
+			</variable>
+		</global_variable>
+		<design name="inter-stroke">
+			<device>mouse</device>
+			<device>touchscreen</device>
+			<hand>right</hand>
+			<frame_setting type="dynamic">
+				<session>
+					<global_var_link type="static" style="local">numberFrame</global_var_link>
+				</session>
+				<frame_list>
+					<frame name="frame">
+						<topLeftOrigin x="16.0" y="16.0"/>
+						<widget name="numpad" type="button" shape="rectangle" w-is-standard="true">
+							<displayLabel><![CDATA[numpad]]></displayLabel>
+							<extent x="3.5" y="4.0" width="93.5" height="95.0"/>
+						</widget>
+						<widget name="slash" type="button" shape="rectangle" w-is-standard="true">
+							<displayLabel><![CDATA[/]]></displayLabel>
+							<extent x="114.0" y="3.5" width="93.5" height="95.0"/>
+						</widget>
+						<widget name="times" type="button" shape="rectangle" w-is-standard="true">
+							<displayLabel><![CDATA[*]]></displayLabel>
+							<extent x="224.5" y="4.0" width="93.5" height="95.0"/>
+						</widget>
+						<widget name="minus" type="button" shape="rectangle" w-is-standard="true">
+							<displayLabel><![CDATA[-]]></displayLabel>
+							<extent x="332.0" y="4.0" width="93.5" height="95.0"/>
+						</widget>
+						<widget name="7" type="button" shape="rectangle" w-is-standard="true">
+							<displayLabel><![CDATA[7]]></displayLabel>
+							<extent x="3.0" y="118.5" width="93.5" height="95.0"/>
+							<transition destinationFrameName="var" durationInSecs="0.0">
+								<action>
+									<touchscreenAction action="downUp">
+									</touchscreenAction>
+								</action>
+							</transition>
+						</widget>
+						<widget name="8" type="button" shape="rectangle" w-is-standard="true">
+							<displayLabel><![CDATA[8]]></displayLabel>
+							<extent x="114.5" y="117.5" width="93.5" height="95.0"/>
+							<transition destinationFrameName="var" durationInSecs="0.0">
+								<action>
+									<touchscreenAction action="downUp">
+									</touchscreenAction>
+								</action>
+							</transition>
+						</widget>
+						<widget name="9" type="button" shape="rectangle" w-is-standard="true">
+							<displayLabel><![CDATA[9]]></displayLabel>
+							<extent x="224.5" y="118.5" width="93.5" height="95.0"/>
+							<transition destinationFrameName="var" durationInSecs="0.0">
+								<action>
+									<touchscreenAction action="downUp">
+									</touchscreenAction>
+								</action>
+							</transition>
+						</widget>
+						<widget name="4" type="button" shape="rectangle" w-is-standard="true">
+							<displayLabel><![CDATA[4]]></displayLabel>
+							<extent x="3.0" y="232.5" width="93.5" height="95.0"/>
+							<transition destinationFrameName="var" durationInSecs="0.0">
+								<action>
+									<touchscreenAction action="downUp">
+									</touchscreenAction>
+								</action>
+							</transition>
+						</widget>
+						<widget name="5" type="button" shape="rectangle" w-is-standard="true">
+							<displayLabel><![CDATA[5]]></displayLabel>
+							<extent x="114.0" y="233.0" width="93.5" height="95.0"/>
+							<transition destinationFrameName="var" durationInSecs="0.0">
+								<action>
+									<touchscreenAction action="downUp">
+									</touchscreenAction>
+								</action>
+							</transition>
+						</widget>
+						<widget name="6" type="button" shape="rectangle" w-is-standard="true">
+							<displayLabel><![CDATA[6]]></displayLabel>
+							<extent x="224.0" y="232.5" width="93.5" height="95.0"/>
+							<transition destinationFrameName="var" durationInSecs="0.0">
+								<action>
+									<touchscreenAction action="downUp">
+									</touchscreenAction>
+								</action>
+							</transition>
+						</widget>
+						<widget name="1" type="button" shape="rectangle" w-is-standard="true">
+							<displayLabel><![CDATA[1]]></displayLabel>
+							<extent x="3.0" y="347.0" width="93.5" height="95.0"/>
+							<transition destinationFrameName="var" durationInSecs="0.0">
+								<action>
+									<touchscreenAction action="downUp">
+									</touchscreenAction>
+								</action>
+							</transition>
+						</widget>
+						<widget name="2" type="button" shape="rectangle" w-is-standard="true">
+							<displayLabel><![CDATA[2]]></displayLabel>
+							<extent x="113.0" y="347.0" width="93.5" height="95.0"/>
+							<transition destinationFrameName="var" durationInSecs="0.0">
+								<action>
+									<touchscreenAction action="downUp">
+									</touchscreenAction>
+								</action>
+							</transition>
+						</widget>
+						<widget name="3" type="button" shape="rectangle" w-is-standard="true">
+							<displayLabel><![CDATA[3]]></displayLabel>
+							<extent x="223.5" y="347.0" width="93.5" height="95.0"/>
+							<transition destinationFrameName="var" durationInSecs="0.0">
+								<action>
+									<touchscreenAction action="downUp">
+									</touchscreenAction>
+								</action>
+							</transition>
+						</widget>
+						<widget name="delete" type="button" shape="rectangle" w-is-standard="true">
+							<displayLabel><![CDATA[.]]></displayLabel>
+							<extent x="224.0" y="461.5" width="93.5" height="95.0"/>
+						</widget>
+						<widget name="0" type="button" shape="rectangle" w-is-standard="true">
+							<displayLabel><![CDATA[0]]></displayLabel>
+							<extent x="3.0" y="461.5" width="205.0" height="94.5"/>
+							<transition destinationFrameName="var" durationInSecs="0.0">
+								<action>
+									<touchscreenAction action="downUp">
+									</touchscreenAction>
+								</action>
+							</transition>
+						</widget>
+						<widget name="enter" type="button" shape="rectangle" w-is-standard="true">
+							<displayLabel><![CDATA[enter]]></displayLabel>
+							<extent x="333.0" y="349.0" width="94.0" height="207.5"/>
+						</widget>
+						<widget name="plus" type="button" shape="rectangle" w-is-standard="true">
+							<displayLabel><![CDATA[+]]></displayLabel>
+							<extent x="333.5" y="119.5" width="94.0" height="207.5"/>
+						</widget>
+					</frame>
+				</frame_list>
+			</frame_setting>
+		</design>
+		<widget_group_list>
+			<widget_group name="enter pin">
+				<widget>0</widget>
+				<widget>1</widget>
+				<widget>2</widget>
+				<widget>3</widget>
+				<widget>4</widget>
+				<widget>5</widget>
+				<widget>6</widget>
+				<widget>7</widget>
+				<widget>8</widget>
+				<widget>9</widget>
+				<widget>enter</widget>
+			</widget_group>			
+		</widget_group_list>
+		<demonstration_task start_frame = "frame0" name = "demo">					
+			<task_setting type="dynamic">			   
+				<session>
+					<global_var_link type="static" style="local">numberFrame</global_var_link>
+				</session>
+				<task_list>
+					<task name = "t1" type = "group">
+						<widget_group>enter pin</widget_group>
+						<touch_screen>
+							<targetIndex ref="true">
+							    <global_var_link type="dynamic" style="local">password</global_var_link>
+							</targetIndex>
+							<type>tap</type>
+							<delay>0.0</delay>
+						</touch_screen>
+					</task>					
+				</task_list>				
+			</task_setting>					
+		</demonstration_task>
+	</system>
+</cogtoolplus_metamodel>

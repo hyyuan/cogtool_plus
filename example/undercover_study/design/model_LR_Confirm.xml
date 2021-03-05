@@ -1,0 +1,1267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cogtoolplus_metamodel>
+	<system>
+		<global_variable>
+			<variable>
+				<id>numOfChallenges</id>
+				<type>Integer</type>
+				<value ref="false">7</value>
+			</variable>
+		</global_variable>
+		<global_callback>
+			<callback type="js">
+				<id>passpicture</id>
+				<file>undercover.js</file>
+				<function>generatePassPicture</function>
+				<argument_list>
+					<argument type="Integer" ref="false">28</argument>
+					<argument type="Integer" ref="false">1</argument>
+					<argument type="Integer" ref="false">5</argument>
+				</argument_list>
+				<data_structure>ArrayList</data_structure>				
+			</callback>
+			<callback type="js">
+				<id>challenges</id>
+				<file>undercover.js</file>
+				<function>arrangeChallenge</function>
+				<argument_list>
+					<argument type="ArrayList" ref="true">
+						<callback_link type="static" style="global">passpicture</callback_link>					
+					</argument>
+					<argument type="Integer" ref="true">
+						<global_var_link type="static" style="local">numOfChallenges</global_var_link>
+					</argument>
+				</argument_list>
+				<data_structure>ArrayList</data_structure>				
+			</callback>
+		</global_callback>
+		<design name="cogtooldemo">
+			<device>mouse</device>
+			<hand>right</hand>
+			<frame_setting type="dynamic">
+				<session>
+					<global_var_link type="static" style="local">numOfChallenges</global_var_link>
+				</session>
+				<frame_list>
+					<frame name="frame">
+						<topLeftOrigin x="0.0" y="0.0"/>
+						<widget name="wg_photo1" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="15.0" y="14.0" width="148.0" height="183.0"/>
+						</widget>
+						<widget name="wg_photo2" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="243.0" y="14.0" width="144.0" height="182.0"/>
+						</widget>
+						<widget name="wg_photo3" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="465.0" y="14.0" width="160.0" height="179.0"/>
+						</widget>
+						<widget name="wg_photo4" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="692.0" y="14.0" width="153.0" height="179.0"/>
+						</widget>
+						<widget name="wg_photo5" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="903.0" y="14.0" width="180.0" height="184.0"/>
+						</widget>
+						<widget name="wg_buttonU1" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="386.0" y="270.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonU2" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="439.0" y="270.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonU3" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="492.0" y="270.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonU4" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="545.0" y="270.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonU5" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="598.0" y="270.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonL1" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="110.0" y="370.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonL2" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="163.0" y="370.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonL3" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="216.0" y="370.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonL4" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="269.0" y="370.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonL5" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="322.0" y="370.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonR1" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="650.0" y="370.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonR2" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="703.0" y="370.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonR3" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="756.0" y="370.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonR4" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="809.0" y="370.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonR5" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="862.0" y="370.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonC1" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="386.0" y="440.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonC2" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="439.0" y="440.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonC3" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="492.0" y="440.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonC4" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="545.0" y="440.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonC5" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="598.0" y="440.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonD1" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="386.0" y="612.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonD2" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="439.0" y="612.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonD3" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="492.0" y="612.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonD4" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="545.0" y="612.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonD5" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="598.0" y="612.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_button1" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="38.0" y="745.0" width="129.0" height="108.0"/>
+							<transition destinationFrameName="var" durationInSecs="0.0">
+								<action>
+									<mouseAction action="downUp" button="left">
+									</mouseAction>
+								</action>
+							</transition>
+						</widget>
+						<widget name="wg_button2" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="253.0" y="745.0" width="150.0" height="119.0"/>
+							<transition destinationFrameName="var" durationInSecs="0.0">
+								<action>
+									<mouseAction action="downUp" button="left">
+									</mouseAction>
+								</action>
+							</transition>
+						</widget>
+						<widget name="wg_button3" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="486.0" y="745.0" width="145.0" height="120.0"/>
+							<transition destinationFrameName="var" durationInSecs="0.0">
+								<action>
+									<mouseAction action="downUp" button="left">
+									</mouseAction>
+								</action>
+							</transition>
+						</widget>
+						<widget name="wg_button4" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="714.0" y="745.0" width="142.0" height="120.0"/>
+							<transition destinationFrameName="var" durationInSecs="0.0">
+								<action>
+									<mouseAction action="downUp" button="left">
+									</mouseAction>
+								</action>
+							</transition>
+						</widget>
+						<widget name="wg_button5" type="button" shape="rectangle" w-is-standard="true" property="dynamic">
+							<extent x="938.0" y="745.0" width="144.0" height="114.0"/>
+							<transition destinationFrameName="var" durationInSecs="0.0">
+								<action>
+									<mouseAction action="downUp" button="left">
+									</mouseAction>
+								</action>
+							</transition>
+						</widget>
+					</frame>
+				</frame_list>
+			</frame_setting>
+				<frame_list>
+					<frame name="f0">
+						<topLeftOrigin x="0.0" y="0.0"/>
+						<widget name="wg_photo1" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="15.0" y="14.0" width="148.0" height="183.0"/>
+						</widget>
+						<widget name="wg_photo2" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="243.0" y="14.0" width="144.0" height="182.0"/>
+						</widget>
+						<widget name="wg_photo3" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="465.0" y="14.0" width="160.0" height="179.0"/>
+						</widget>
+						<widget name="wg_photo4" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="692.0" y="14.0" width="153.0" height="179.0"/>
+						</widget>
+						<widget name="wg_photo5" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="903.0" y="14.0" width="180.0" height="184.0"/>
+						</widget>
+						<widget name="wg_buttonU1" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="386.0" y="270.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonU2" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="439.0" y="270.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonU3" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="492.0" y="270.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonU4" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="545.0" y="270.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonU5" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="598.0" y="270.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonL1" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="110.0" y="370.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonL2" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="163.0" y="370.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonL3" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="216.0" y="370.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonL4" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="269.0" y="370.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonL5" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="322.0" y="370.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonR1" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="650.0" y="370.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonR2" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="703.0" y="370.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonR3" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="756.0" y="370.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonR4" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="809.0" y="370.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonR5" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="862.0" y="370.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonC1" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="386.0" y="440.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonC2" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="439.0" y="440.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonC3" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="492.0" y="440.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonC4" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="545.0" y="440.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonC5" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="598.0" y="440.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonD1" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="386.0" y="612.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonD2" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="439.0" y="612.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonD3" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="492.0" y="612.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonD4" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="545.0" y="612.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonD5" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="598.0" y="612.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_button1" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="38.0" y="745.0" width="129.0" height="108.0"/>
+							<transition destinationFrameName="f1" durationInSecs="0.0">
+								<action>
+									<mouseAction action="downUp" button="left">
+									</mouseAction>
+								</action>
+							</transition>
+						</widget>
+						<widget name="wg_button2" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="253.0" y="745.0" width="150.0" height="119.0"/>
+							<transition destinationFrameName="f1" durationInSecs="0.0">
+								<action>
+									<mouseAction action="downUp" button="left">
+									</mouseAction>
+								</action>
+							</transition>
+						</widget>
+						<widget name="wg_button3" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="486.0" y="745.0" width="145.0" height="120.0"/>
+							<transition destinationFrameName="f1" durationInSecs="0.0">
+								<action>
+									<mouseAction action="downUp" button="left">
+									</mouseAction>
+								</action>
+							</transition>
+						</widget>
+						<widget name="wg_button4" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="714.0" y="745.0" width="142.0" height="120.0"/>
+							<transition destinationFrameName="f1" durationInSecs="0.0">
+								<action>
+									<mouseAction action="downUp" button="left">
+									</mouseAction>
+								</action>
+							</transition>
+						</widget>
+						<widget name="wg_button5" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="938.0" y="745.0" width="144.0" height="114.0"/>
+							<transition destinationFrameName="f1" durationInSecs="0.0">
+								<action>
+									<mouseAction action="downUp" button="left">
+									</mouseAction>
+								</action>
+							</transition>
+						</widget>
+					</frame>
+					<frame name="f1">
+						<topLeftOrigin x="0.0" y="0.0"/>
+						<widget name="wg_photo1" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="15.0" y="14.0" width="148.0" height="183.0"/>
+						</widget>
+						<widget name="wg_photo2" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="243.0" y="14.0" width="144.0" height="182.0"/>
+						</widget>
+						<widget name="wg_photo3" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="465.0" y="14.0" width="160.0" height="179.0"/>
+						</widget>
+						<widget name="wg_photo4" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="692.0" y="14.0" width="153.0" height="179.0"/>
+						</widget>
+						<widget name="wg_photo5" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="903.0" y="14.0" width="180.0" height="184.0"/>
+						</widget>
+						<widget name="wg_buttonU1" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="386.0" y="270.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonU2" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="439.0" y="270.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonU3" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="492.0" y="270.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonU4" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="545.0" y="270.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonU5" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="598.0" y="270.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonL1" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="110.0" y="370.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonL2" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="163.0" y="370.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonL3" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="216.0" y="370.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonL4" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="269.0" y="370.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonL5" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="322.0" y="370.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonR1" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="650.0" y="370.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonR2" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="703.0" y="370.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonR3" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="756.0" y="370.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonR4" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="809.0" y="370.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonR5" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="862.0" y="370.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonC1" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="386.0" y="440.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonC2" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="439.0" y="440.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonC3" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="492.0" y="440.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonC4" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="545.0" y="440.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonC5" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="598.0" y="440.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonD1" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="386.0" y="612.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonD2" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="439.0" y="612.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonD3" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="492.0" y="612.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonD4" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="545.0" y="612.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonD5" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="598.0" y="612.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_button1" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="38.0" y="745.0" width="129.0" height="108.0"/>
+							<transition destinationFrameName="f2" durationInSecs="0.0">
+								<action>
+									<mouseAction action="downUp" button="left">
+									</mouseAction>
+								</action>
+							</transition>
+						</widget>
+						<widget name="wg_button2" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="253.0" y="745.0" width="150.0" height="119.0"/>
+							<transition destinationFrameName="f2" durationInSecs="0.0">
+								<action>
+									<mouseAction action="downUp" button="left">
+									</mouseAction>
+								</action>
+							</transition>
+						</widget>
+						<widget name="wg_button3" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="486.0" y="745.0" width="145.0" height="120.0"/>
+							<transition destinationFrameName="f2" durationInSecs="0.0">
+								<action>
+									<mouseAction action="downUp" button="left">
+									</mouseAction>
+								</action>
+							</transition>
+						</widget>
+						<widget name="wg_button4" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="714.0" y="745.0" width="142.0" height="120.0"/>
+							<transition destinationFrameName="f2" durationInSecs="0.0">
+								<action>
+									<mouseAction action="downUp" button="left">
+									</mouseAction>
+								</action>
+							</transition>
+						</widget>
+						<widget name="wg_button5" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="938.0" y="745.0" width="144.0" height="114.0"/>
+							<transition destinationFrameName="f2" durationInSecs="0.0">
+								<action>
+									<mouseAction action="downUp" button="left">
+									</mouseAction>
+								</action>
+							</transition>
+						</widget>
+					</frame>
+					<frame name="f2">
+						<topLeftOrigin x="0.0" y="0.0"/>
+						<widget name="wg_photo1" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="15.0" y="14.0" width="148.0" height="183.0"/>
+						</widget>
+						<widget name="wg_photo2" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="243.0" y="14.0" width="144.0" height="182.0"/>
+						</widget>
+						<widget name="wg_photo3" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="465.0" y="14.0" width="160.0" height="179.0"/>
+						</widget>
+						<widget name="wg_photo4" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="692.0" y="14.0" width="153.0" height="179.0"/>
+						</widget>
+						<widget name="wg_photo5" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="903.0" y="14.0" width="180.0" height="184.0"/>
+						</widget>
+						<widget name="wg_buttonU1" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="386.0" y="270.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonU2" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="439.0" y="270.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonU3" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="492.0" y="270.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonU4" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="545.0" y="270.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonU5" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="598.0" y="270.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonL1" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="110.0" y="370.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonL2" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="163.0" y="370.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonL3" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="216.0" y="370.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonL4" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="269.0" y="370.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonL5" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="322.0" y="370.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonR1" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="650.0" y="370.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonR2" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="703.0" y="370.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonR3" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="756.0" y="370.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonR4" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="809.0" y="370.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonR5" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="862.0" y="370.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonC1" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="386.0" y="440.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonC2" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="439.0" y="440.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonC3" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="492.0" y="440.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonC4" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="545.0" y="440.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonC5" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="598.0" y="440.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonD1" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="386.0" y="612.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonD2" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="439.0" y="612.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonD3" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="492.0" y="612.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonD4" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="545.0" y="612.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonD5" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="598.0" y="612.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_button1" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="38.0" y="745.0" width="129.0" height="108.0"/>
+							<transition destinationFrameName="f3" durationInSecs="0.0">
+								<action>
+									<mouseAction action="downUp" button="left">
+									</mouseAction>
+								</action>
+							</transition>
+						</widget>
+						<widget name="wg_button2" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="253.0" y="745.0" width="150.0" height="119.0"/>
+							<transition destinationFrameName="f3" durationInSecs="0.0">
+								<action>
+									<mouseAction action="downUp" button="left">
+									</mouseAction>
+								</action>
+							</transition>
+						</widget>
+						<widget name="wg_button3" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="486.0" y="745.0" width="145.0" height="120.0"/>
+							<transition destinationFrameName="f3" durationInSecs="0.0">
+								<action>
+									<mouseAction action="downUp" button="left">
+									</mouseAction>
+								</action>
+							</transition>
+						</widget>
+						<widget name="wg_button4" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="714.0" y="745.0" width="142.0" height="120.0"/>
+							<transition destinationFrameName="f3" durationInSecs="0.0">
+								<action>
+									<mouseAction action="downUp" button="left">
+									</mouseAction>
+								</action>
+							</transition>
+						</widget>
+						<widget name="wg_button5" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="938.0" y="745.0" width="144.0" height="114.0"/>
+							<transition destinationFrameName="f3" durationInSecs="0.0">
+								<action>
+									<mouseAction action="downUp" button="left">
+									</mouseAction>
+								</action>
+							</transition>
+						</widget>
+					</frame>
+					<frame name="f3">
+						<topLeftOrigin x="0.0" y="0.0"/>
+						<widget name="wg_photo1" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="15.0" y="14.0" width="148.0" height="183.0"/>
+						</widget>
+						<widget name="wg_photo2" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="243.0" y="14.0" width="144.0" height="182.0"/>
+						</widget>
+						<widget name="wg_photo3" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="465.0" y="14.0" width="160.0" height="179.0"/>
+						</widget>
+						<widget name="wg_photo4" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="692.0" y="14.0" width="153.0" height="179.0"/>
+						</widget>
+						<widget name="wg_photo5" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="903.0" y="14.0" width="180.0" height="184.0"/>
+						</widget>
+						<widget name="wg_buttonU1" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="386.0" y="270.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonU2" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="439.0" y="270.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonU3" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="492.0" y="270.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonU4" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="545.0" y="270.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonU5" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="598.0" y="270.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonL1" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="110.0" y="370.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonL2" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="163.0" y="370.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonL3" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="216.0" y="370.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonL4" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="269.0" y="370.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonL5" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="322.0" y="370.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonR1" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="650.0" y="370.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonR2" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="703.0" y="370.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonR3" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="756.0" y="370.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonR4" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="809.0" y="370.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonR5" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="862.0" y="370.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonC1" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="386.0" y="440.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonC2" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="439.0" y="440.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonC3" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="492.0" y="440.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonC4" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="545.0" y="440.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonC5" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="598.0" y="440.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonD1" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="386.0" y="612.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonD2" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="439.0" y="612.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonD3" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="492.0" y="612.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonD4" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="545.0" y="612.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonD5" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="598.0" y="612.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_button1" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="38.0" y="745.0" width="129.0" height="108.0"/>
+							<transition destinationFrameName="f4" durationInSecs="0.0">
+								<action>
+									<mouseAction action="downUp" button="left">
+									</mouseAction>
+								</action>
+							</transition>
+						</widget>
+						<widget name="wg_button2" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="253.0" y="745.0" width="150.0" height="119.0"/>
+							<transition destinationFrameName="f4" durationInSecs="0.0">
+								<action>
+									<mouseAction action="downUp" button="left">
+									</mouseAction>
+								</action>
+							</transition>
+						</widget>
+						<widget name="wg_button3" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="486.0" y="745.0" width="145.0" height="120.0"/>
+							<transition destinationFrameName="f4" durationInSecs="0.0">
+								<action>
+									<mouseAction action="downUp" button="left">
+									</mouseAction>
+								</action>
+							</transition>
+						</widget>
+						<widget name="wg_button4" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="714.0" y="745.0" width="142.0" height="120.0"/>
+							<transition destinationFrameName="f4" durationInSecs="0.0">
+								<action>
+									<mouseAction action="downUp" button="left">
+									</mouseAction>
+								</action>
+							</transition>
+						</widget>
+						<widget name="wg_button5" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="938.0" y="745.0" width="144.0" height="114.0"/>
+							<transition destinationFrameName="f4" durationInSecs="0.0">
+								<action>
+									<mouseAction action="downUp" button="left">
+									</mouseAction>
+								</action>
+							</transition>
+						</widget>
+					</frame>
+					<frame name="f4">
+						<topLeftOrigin x="0.0" y="0.0"/>
+						<widget name="wg_photo1" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="15.0" y="14.0" width="148.0" height="183.0"/>
+						</widget>
+						<widget name="wg_photo2" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="243.0" y="14.0" width="144.0" height="182.0"/>
+						</widget>
+						<widget name="wg_photo3" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="465.0" y="14.0" width="160.0" height="179.0"/>
+						</widget>
+						<widget name="wg_photo4" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="692.0" y="14.0" width="153.0" height="179.0"/>
+						</widget>
+						<widget name="wg_photo5" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="903.0" y="14.0" width="180.0" height="184.0"/>
+						</widget>
+						<widget name="wg_buttonU1" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="386.0" y="270.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonU2" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="439.0" y="270.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonU3" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="492.0" y="270.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonU4" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="545.0" y="270.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonU5" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="598.0" y="270.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonL1" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="110.0" y="370.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonL2" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="163.0" y="370.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonL3" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="216.0" y="370.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonL4" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="269.0" y="370.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonL5" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="322.0" y="370.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonR1" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="650.0" y="370.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonR2" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="703.0" y="370.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonR3" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="756.0" y="370.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonR4" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="809.0" y="370.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonR5" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="862.0" y="370.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonC1" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="386.0" y="440.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonC2" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="439.0" y="440.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonC3" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="492.0" y="440.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonC4" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="545.0" y="440.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonC5" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="598.0" y="440.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonD1" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="386.0" y="612.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonD2" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="439.0" y="612.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonD3" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="492.0" y="612.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonD4" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="545.0" y="612.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonD5" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="598.0" y="612.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_button1" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="38.0" y="745.0" width="129.0" height="108.0"/>
+							<transition destinationFrameName="f5" durationInSecs="0.0">
+								<action>
+									<mouseAction action="downUp" button="left">
+									</mouseAction>
+								</action>
+							</transition>
+						</widget>
+						<widget name="wg_button2" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="253.0" y="745.0" width="150.0" height="119.0"/>
+							<transition destinationFrameName="f5" durationInSecs="0.0">
+								<action>
+									<mouseAction action="downUp" button="left">
+									</mouseAction>
+								</action>
+							</transition>
+						</widget>
+						<widget name="wg_button3" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="486.0" y="745.0" width="145.0" height="120.0"/>
+							<transition destinationFrameName="f5" durationInSecs="0.0">
+								<action>
+									<mouseAction action="downUp" button="left">
+									</mouseAction>
+								</action>
+							</transition>
+						</widget>
+						<widget name="wg_button4" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="714.0" y="745.0" width="142.0" height="120.0"/>
+							<transition destinationFrameName="f5" durationInSecs="0.0">
+								<action>
+									<mouseAction action="downUp" button="left">
+									</mouseAction>
+								</action>
+							</transition>
+						</widget>
+						<widget name="wg_button5" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="938.0" y="745.0" width="144.0" height="114.0"/>
+							<transition destinationFrameName="f5" durationInSecs="0.0">
+								<action>
+									<mouseAction action="downUp" button="left">
+									</mouseAction>
+								</action>
+							</transition>
+						</widget>
+					</frame>
+					<frame name="f5">
+						<widget name="wg_photo1" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="15.0" y="14.0" width="148.0" height="183.0"/>
+						</widget>
+						<widget name="wg_photo2" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="243.0" y="14.0" width="144.0" height="182.0"/>
+						</widget>
+						<widget name="wg_photo3" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="465.0" y="14.0" width="160.0" height="179.0"/>
+						</widget>
+						<widget name="wg_photo4" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="692.0" y="14.0" width="153.0" height="179.0"/>
+						</widget>
+						<widget name="wg_photo5" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="903.0" y="14.0" width="180.0" height="184.0"/>
+						</widget>
+						<widget name="wg_buttonU1" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="386.0" y="270.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonU2" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="439.0" y="270.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonU3" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="492.0" y="270.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonU4" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="545.0" y="270.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonU5" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="598.0" y="270.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonL1" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="110.0" y="370.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonL2" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="163.0" y="370.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonL3" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="216.0" y="370.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonL4" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="269.0" y="370.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonL5" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="322.0" y="370.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonR1" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="650.0" y="370.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonR2" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="703.0" y="370.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonR3" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="756.0" y="370.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonR4" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="809.0" y="370.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonR5" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="862.0" y="370.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonC1" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="386.0" y="440.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonC2" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="439.0" y="440.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonC3" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="492.0" y="440.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonC4" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="545.0" y="440.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonC5" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="598.0" y="440.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonD1" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="386.0" y="612.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonD2" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="439.0" y="612.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonD3" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="492.0" y="612.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonD4" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="545.0" y="612.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonD5" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="598.0" y="612.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_button1" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="38.0" y="745.0" width="129.0" height="108.0"/>
+							<transition destinationFrameName="f6" durationInSecs="0.0">
+								<action>
+									<mouseAction action="downUp" button="left">
+									</mouseAction>
+								</action>
+							</transition>
+						</widget>
+						<widget name="wg_button2" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="253.0" y="745.0" width="150.0" height="119.0"/>
+							<transition destinationFrameName="f6" durationInSecs="0.0">
+								<action>
+									<mouseAction action="downUp" button="left">
+									</mouseAction>
+								</action>
+							</transition>
+						</widget>
+						<widget name="wg_button3" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="486.0" y="745.0" width="145.0" height="120.0"/>
+							<transition destinationFrameName="f6" durationInSecs="0.0">
+								<action>
+									<mouseAction action="downUp" button="left">
+									</mouseAction>
+								</action>
+							</transition>
+						</widget>
+						<widget name="wg_button4" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="714.0" y="745.0" width="142.0" height="120.0"/>
+							<transition destinationFrameName="f6" durationInSecs="0.0">
+								<action>
+									<mouseAction action="downUp" button="left">
+									</mouseAction>
+								</action>
+							</transition>
+						</widget>
+						<widget name="wg_button5" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="938.0" y="745.0" width="144.0" height="114.0"/>
+							<transition destinationFrameName="f6" durationInSecs="0.0">
+								<action>
+									<mouseAction action="downUp" button="left">
+									</mouseAction>
+								</action>
+							</transition>
+						</widget>
+					</frame>
+					<frame name="f6">
+						<topLeftOrigin x="0.0" y="0.0"/>
+						<widget name="wg_photo1" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="15.0" y="14.0" width="148.0" height="183.0"/>
+						</widget>
+						<widget name="wg_photo2" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="243.0" y="14.0" width="144.0" height="182.0"/>
+						</widget>
+						<widget name="wg_photo3" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="465.0" y="14.0" width="160.0" height="179.0"/>
+						</widget>
+						<widget name="wg_photo4" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="692.0" y="14.0" width="153.0" height="179.0"/>
+						</widget>
+						<widget name="wg_photo5" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="903.0" y="14.0" width="180.0" height="184.0"/>
+						</widget>
+						<widget name="wg_buttonU1" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="386.0" y="270.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonU2" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="439.0" y="270.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonU3" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="492.0" y="270.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonU4" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="545.0" y="270.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonU5" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="598.0" y="270.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonL1" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="110.0" y="370.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonL2" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="163.0" y="370.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonL3" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="216.0" y="370.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonL4" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="269.0" y="370.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonL5" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="322.0" y="370.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonR1" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="650.0" y="370.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonR2" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="703.0" y="370.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonR3" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="756.0" y="370.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonR4" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="809.0" y="370.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonR5" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="862.0" y="370.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonC1" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="386.0" y="440.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonC2" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="439.0" y="440.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonC3" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="492.0" y="440.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonC4" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="545.0" y="440.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonC5" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="598.0" y="440.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonD1" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="386.0" y="612.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonD2" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="439.0" y="612.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonD3" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="492.0" y="612.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonD4" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="545.0" y="612.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_buttonD5" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="598.0" y="612.0" width="53.0" height="38.0"/>
+						</widget>
+						<widget name="wg_button1" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="38.0" y="745.0" width="129.0" height="108.0"/>
+						</widget>
+						<widget name="wg_button2" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="253.0" y="745.0" width="150.0" height="119.0"/>
+						</widget>
+						<widget name="wg_button3" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="486.0" y="745.0" width="145.0" height="120.0"/>
+						</widget>
+						<widget name="wg_button4" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="714.0" y="745.0" width="142.0" height="120.0"/>
+						</widget>
+						<widget name="wg_button5" type="button" shape="rectangle" w-is-standard="true">
+							<extent x="938.0" y="745.0" width="144.0" height="114.0"/>
+						</widget>
+					</frame>
+				</frame_list>
+			</frame_setting>-->
+		</design>
+		<widget_group_list>
+			<widget_group name="photo group">
+				<widget>wg_photo1</widget>
+				<widget>wg_photo2</widget>
+				<widget>wg_photo3</widget>
+				<widget>wg_photo4</widget>
+				<widget>wg_photo5</widget>
+			</widget_group>
+			<widget_group name="hidden left">
+				<widget>wg_buttonL1</widget>
+				<widget>wg_buttonL2</widget>
+				<widget>wg_buttonL3</widget>
+				<widget>wg_buttonL4</widget>
+				<widget>wg_buttonL5</widget>
+			</widget_group>
+			<widget_group name="hidden right">
+				<widget>wg_buttonR1</widget>
+				<widget>wg_buttonR2</widget>
+				<widget>wg_buttonR3</widget>
+				<widget>wg_buttonR4</widget>
+				<widget>wg_buttonR5</widget>
+			</widget_group>
+			<widget_group name="hidden up">
+				<widget>wg_buttonU1</widget>
+				<widget>wg_buttonU2</widget>
+				<widget>wg_buttonU3</widget>
+				<widget>wg_buttonU4</widget>
+				<widget>wg_buttonU5</widget>
+			</widget_group>
+			<widget_group name="hidden down">
+				<widget>wg_buttonD1</widget>
+				<widget>wg_buttonD2</widget>
+				<widget>wg_buttonD3</widget>
+				<widget>wg_buttonD4</widget>
+				<widget>wg_buttonD5</widget>
+			</widget_group>
+			<widget_group name="hidden centre">
+				<widget>wg_buttonC1</widget>
+				<widget>wg_buttonC2</widget>
+				<widget>wg_buttonC3</widget>
+				<widget>wg_buttonC4</widget>
+				<widget>wg_buttonC5</widget>
+			</widget_group>
+			<widget_group name="button group">
+				<widget>wg_button1</widget>
+				<widget>wg_button2</widget>
+				<widget>wg_button3</widget>
+				<widget>wg_button4</widget>
+				<widget>wg_button5</widget>
+			</widget_group>
+		</widget_group_list>
+		<demonstration_task start_frame = "frame0" name = "demo">					
+			<task_setting type="dynamic">			   
+				<session>
+					<global_var_link type="static" style="local">numOfChallenges</global_var_link>
+				</session>
+				<task_list>
+				    <!-- The first task is to find the passphoto-->
+					<task name="t1" type="group">
+						<widget_group>photo group</widget_group>	
+						<visual_scan>
+ 						    <targetIndex>							    
+								<callback type="js">
+									<id>passpictureIdx</id>
+									<file>undercover.js</file>
+									<function>getHiddenResponse</function>
+									<argument_list>
+										<argument type="ArrayList" ref="true">
+											<callback_link type="dynamic" style="global">challenges</callback_link>					
+										</argument>
+										<argument type="ArrayList" ref="true">
+											<callback_link type="static" style="global">passpicture</callback_link>
+										</argument>
+									</argument_list>
+									<data_structure>Integer</data_structure>				
+								</callback>
+							</targetIndex>	
+							<scan_path>
+							    <callback type="js">
+ 								    <file>behaviourTemplate.js</file>
+									<function>getScanPath</function>
+									<argument_list>
+									    <argument type="String" ref="false">LR</argument>
+										<argument type="Integer" ref="true"> 
+							  	            <callback_link type="static" style="local">passpictureIdx</callback_link>
+										</argument>
+										<argument type="ArrayList" ref="true">
+										    <widget_group>photo group</widget_group>
+										</argument>							            
+									</argument_list>
+									<data_structure>ArrayList</data_structure>
+								</callback>
+							</scan_path>
+						</visual_scan>
+					</task>
+					<task name="t2" type="group">
+						<widget_group>
+							<callback type="js">
+								<id>hiddenchallenge</id>
+								<file>undercover.js</file>
+								<function>getHiddenChallenge</function>
+								<data_structure>String</data_structure>
+							</callback>
+						</widget_group>
+						<noninteractive>
+							<targetIndex>
+								<callback type="js">
+									<file>undercover.js</file>
+									<function>getPublicResponse</function>
+									<argument_list>
+										<argument type="Integer" ref="false">1</argument>
+										<argument type="String" ref="true">
+											<callback_link type="static" style="local">hiddenchallenge</callback_link>
+										</argument>
+										<argument type="Integer" ref="true">
+											<callback_link type="static" style="local">passpictureIdx</callback_link>
+										</argument>
+									</argument_list>
+									<data_structure>Integer</data_structure>				
+								</callback>
+							</targetIndex>
+						</noninteractive>
+					</task>					
+					<task name="t3" type="group">
+					    <widget_group>photo group</widget_group>
+   					    <noninteractive>								
+						    <targetIndex ref="true">t1#</targetIndex>						
+						</noninteractive>
+					</task>
+					<task name="t4" type="group">
+						<widget_group>button group</widget_group>				
+						<button_press>
+							<targetIndex ref="true">t2#</targetIndex>
+							<state>left</state>
+							<type>click</type>
+							<delay>0</delay>
+						</button_press>
+					</task>						
+				</task_list>				
+			</task_setting>					
+		</demonstration_task>
+	</system>
+</cogtoolplus_metamodel>
