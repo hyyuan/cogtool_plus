@@ -72,6 +72,6 @@ Two example projects (‘pin_study’ and ‘undercover_study’)  are included 
 #### 
 
 
-[1] Yuan H, Li S., Rusconi P., and Aljaffan N., "[When Eye-tracking Meets Cognitive Modeling: Applications to Cyber Security Systems](https://epubs.surrey.ac.uk/813689/1/eye-tracking-meets.pdf)," in Human Aspects of Information Security, Privacy and Trust: 5th International Conference, HAS 2017, Held as Part of HCI International 2017, Vancouver, BC, Canada, July 9-14, 2017, Proceedings, Lecture Notes in Computer Science, vol. 10292, pp. 251-264, 2017 
+[1] Yuan H., Li S., Rusconi P., and Aljaffan N., "[When Eye-tracking Meets Cognitive Modeling: Applications to Cyber Security Systems](https://epubs.surrey.ac.uk/813689/1/eye-tracking-meets.pdf)," in Human Aspects of Information Security, Privacy and Trust: 5th International Conference, HAS 2017, Held as Part of HCI International 2017, Vancouver, BC, Canada, July 9-14, 2017, Proceedings, Lecture Notes in Computer Science, vol. 10292, pp. 251-264, 2017 
 
-[2] Yuan H, Li S, Rusconi P, "CogTool+: Modeling human performance at large scale," accepted to ACM Transactions on Computer-Human Interaction, ACM.
+[2] Yuan H., Li S., and Rusconi P. 2021. CogTool+: Modeling Human Performance at Large Scale. ACM Trans. Comput.-Hum. Interact. 28, 2, Article 7 (April 2021), 38 pages. DOI:https://doi.org/10.1145/3447534
